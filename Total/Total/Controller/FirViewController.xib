@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirViewController">
+            <connections>
+                <outlet property="liZiBtn" destination="yuu-Mu-5b7" id="c0l-KE-pQn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="00.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TQv-m2-4KM">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWT-u6-ivl">
+                    <rect key="frame" x="42" y="87" width="59" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="SDImage">
+                        <color key="titleColor" red="1" green="0.72116557950000004" blue="0.28912041430000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goSDImage:" destination="-1" eventType="touchUpInside" id="dfs-wC-KLW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuu-Mu-5b7">
+                    <rect key="frame" x="28" y="33" width="87" height="22"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="粒子动画">
+                        <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goLiZi:" destination="-1" eventType="touchUpInside" id="ucX-24-Drz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHO-Hj-OKB">
+                    <rect key="frame" x="165" y="29" width="67" height="30"/>
+                    <state key="normal" title="画图涂鸦">
+                        <color key="titleColor" red="1" green="0.92199158670000003" blue="0.21130727660000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goDrawBtn:" destination="-1" eventType="touchUpInside" id="tQJ-OO-wWj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90o-GV-pi3">
+                    <rect key="frame" x="123" y="698" width="169" height="30"/>
+                    <state key="normal" title="锁屏">
+                        <color key="titleColor" red="0.67297944659999998" green="1" blue="0.20819007040000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="lockBtn:" destination="-1" eventType="touchUpInside" id="5fo-ao-HuA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDe-v0-8kO">
+                    <rect key="frame" x="165" y="90" width="67" height="30"/>
+                    <state key="normal" title="触摸手势">
+                        <color key="titleColor" red="0.2123376636" green="1" blue="0.46742450549999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goHandBtn:" destination="-1" eventType="touchUpInside" id="yju-qm-LZC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTB-Vj-tVL">
+                    <rect key="frame" x="268" y="29" width="67" height="30"/>
+                    <state key="normal" title="核心动画">
+                        <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="animationBtn:" destination="-1" eventType="touchUpInside" id="SHy-3g-hKO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLN-9R-0GC">
+                    <rect key="frame" x="268" y="90" width="60" height="30"/>
+                    <state key="normal" title="小游戏">
+                        <color key="titleColor" red="0.33480521369999999" green="1" blue="0.27147981049999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goGameBtn:" destination="-1" eventType="touchUpInside" id="O0E-vZ-ExQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <point key="canvasLocation" x="705" y="55"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="00.jpg" width="640" height="1024"/>
+    </resources>
+</document>
