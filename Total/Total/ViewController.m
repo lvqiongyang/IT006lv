@@ -33,7 +33,7 @@
     NSLog(@"%@",NSHomeDirectory());
   
     _sp=5;
-  
+    NSLog(@"%ld",_sp);
     
     self.dateFormatter=[[[NSDateFormatter alloc]init]autorelease];
     [_dateFormatter setDateFormat:@"yyyy年MM月dd日 HH:mm:ss"];
