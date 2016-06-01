@@ -12,7 +12,7 @@
 #import "SDViewController.h"
 #import "HandViewController.h"
 #import "HeXinViewController.h"
-#import "AplleVC.h"
+
 
 @interface FirViewController ()
 
@@ -104,16 +104,6 @@
 }
 
 - (IBAction)goGameBtn:(UIButton *)sender {
-    AplleVC *aVC=[[AplleVC new]autorelease];
-    
-    CATransition *animation=[CATransition animation];
-    animation.duration=1.5;
-    animation.type=kCATransitionMoveIn;
-    animation.subtype=kCATransitionFromRight;
-    [self.view.window.layer addAnimation:animation forKey:nil];
-    
-    
-    [self.navigationController pushViewController:aVC animated:YES];
     
 }
 
